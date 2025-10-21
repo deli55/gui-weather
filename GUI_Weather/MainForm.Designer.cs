@@ -1,6 +1,6 @@
 ﻿namespace GUI_Weather
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,7 @@
             // 
             // btnFetchWeather
             // 
-            this.btnFetchWeather.Location = new System.Drawing.Point(73, 179);
+            this.btnFetchWeather.Location = new System.Drawing.Point(73, 161);
             this.btnFetchWeather.Name = "btnFetchWeather";
             this.btnFetchWeather.Size = new System.Drawing.Size(148, 57);
             this.btnFetchWeather.TabIndex = 0;
@@ -68,13 +68,13 @@
             // 
             // txtApiKey
             // 
-            this.txtApiKey.Location = new System.Drawing.Point(73, 79);
+            this.txtApiKey.Location = new System.Drawing.Point(73, 75);
             this.txtApiKey.Multiline = true;
             this.txtApiKey.Name = "txtApiKey";
-            this.txtApiKey.Size = new System.Drawing.Size(296, 75);
+            this.txtApiKey.Size = new System.Drawing.Size(296, 49);
             this.txtApiKey.TabIndex = 4;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,9 +84,9 @@
             this.Controls.Add(this.lblApiKey);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnFetchWeather);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "MainForm";
+            this.Text = "Weather App";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

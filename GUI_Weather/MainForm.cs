@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace GUI_Weather
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
 
         }
@@ -29,7 +29,7 @@ namespace GUI_Weather
 
             if (string.IsNullOrEmpty(apiKey))
             {
-                Log("❌ Please enter your OpenWeatherMap API key first.");
+                Log("Please enter your OpenWeatherMap API key first.");
                 return;
             }
 
@@ -38,7 +38,7 @@ namespace GUI_Weather
 
         private async Task FetchWeatherAsync(string apiKey)
         {
-            string city = "Belgrade"; // default city
+            string city = "London"; // default city
             string url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric";
 
             try
